@@ -20,7 +20,7 @@ public class PredicateExample {
         list.add(new Product("mouse", 50.00));
         list.add(new Product("monitor", 1.00));
 
-        list.removeIf(Product::staticProductPredicate);
+        list.removeIf(Product::nonStaticProductPredicate);
 
         for (Product p:list) {
             System.out.println(p);

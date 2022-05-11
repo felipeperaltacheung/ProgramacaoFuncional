@@ -29,8 +29,12 @@ public class Product {
         this.price = price;
     }
 
-    public static boolean staticProductPredicate(Product p){
+    /*public static boolean staticProductPredicate(Product p){
         return p.getPrice() >= 100.0;
+    } Reference method com método estático */
+
+    public boolean nonStaticProductPredicate(){
+        return price >= 100;  //Reference method com método não estático, "ela usa o price da classe"
     }
 
     @Override
