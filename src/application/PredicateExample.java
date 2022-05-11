@@ -21,11 +21,9 @@ public class PredicateExample {
         list.add(new Product("mouse", 50.00));
         list.add(new Product("monistor", 1.00));
 
-        double min = 800.00;
+        double min = 50.00;
 
-        Predicate<Product> pred = p -> p.getPrice() >= min;
-
-        list.removeIf(pred);
+        list.removeIf(p -> p.getPrice() >= min);
 
         for (Product p:list) {
             System.out.println(p);
