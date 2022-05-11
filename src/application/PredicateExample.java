@@ -18,8 +18,9 @@ public class PredicateExample {
         list.add(new Product("Notebook", 1200.00));
         list.add(new Product("Tablet", 450.00));
         list.add(new Product("mouse", 50.00));
+        list.add(new Product("monitor", 1.00));
 
-        list.removeIf(new ProductPredicate());
+        list.removeIf(Product::staticProductPredicate);
 
         for (Product p:list) {
             System.out.println(p);
