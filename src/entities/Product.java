@@ -38,11 +38,12 @@ public class Product {
     }
 
     public static void staticPriceUpdate(Product p){
-        p.setPrice(p.getPrice() * 1.1);
+        p.setPrice(p.getPrice() * 1.1);  //
     }
 
     public void nonstaticPriceUpdate(){
-        price = price * 1.1;
+        price = price * 1.1; // ou
+        //setPrice(getPrice() * 1.1);
     }
 
 

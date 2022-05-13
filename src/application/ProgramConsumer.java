@@ -21,9 +21,7 @@ public class ProgramConsumer {
         list.add(new Product("mouse", 1.00));
         list.add(new Product("monistor", 1000.00));
 
-        double factor = 1.1;
-
-        list.forEach(p -> p.setPrice(p.getPrice() * factor));
+        list.forEach(Product::nonstaticPriceUpdate);
 
         list.forEach(System.out::println);
 
