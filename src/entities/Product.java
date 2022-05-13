@@ -37,6 +37,10 @@ public class Product {
         return price >= 100;  //Reference method com método não estático, "ela usa o price da classe"
     }
 
+    public static void staticPriceUpdate(Product p){
+        p.setPrice(p.getPrice() * 1.1);
+    }
+
     @Override
     public String toString() {
         return "Product{" +

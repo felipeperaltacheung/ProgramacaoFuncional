@@ -14,13 +14,13 @@ public class ProgramConsumer {
         Locale.setDefault(Locale.US);
         List<Product> list = new ArrayList<>();
 
-        list.add(new Product("TV", 900.00));
-        list.add(new Product("Notebook", 1200.00));
-        list.add(new Product("Tablet", 450.00));
-        list.add(new Product("mouse", 50.00));
-        list.add(new Product("monistor", 1.00));
+        list.add(new Product("TV", 700.00));
+        list.add(new Product("Notebook", 10.00));
+        list.add(new Product("Tablet", 100.00));
+        list.add(new Product("mouse", 1.00));
+        list.add(new Product("monistor", 1000.00));
 
-        list.forEach(new PriceUpdate());
+        list.forEach(Product::staticPriceUpdate);
 
         list.forEach(System.out::println);
 
