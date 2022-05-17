@@ -46,6 +46,9 @@ public class Product {
         //setPrice(getPrice() * 1.1);
     }
 
+    public static String staticUpperCaseName(Product p){
+        return p.getName().toUpperCase();
+    }
 
     @Override
     public String toString() {
