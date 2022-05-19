@@ -22,8 +22,5 @@ public class ProgramPipeline {
                 .map(x -> x * 10)
                 .collect(Collectors.toList());
         System.out.println(Arrays.toString(newList.toArray())); //filtrando numeros pares, e multiplicando esses numeros por 10
-
-
     }
-
 }
